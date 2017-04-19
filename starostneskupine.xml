@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_STAROSTNESKUPINE</name>
+    <author>Spletodrom</author>
+    <creationDate>Junij 2015</creationDate>
+    <copyright>Copyright (C) 2015 Spletodrom.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <authorEmail>info@spletodrom.com</authorEmail>
+    <authorUrl>www.spletodrom.com</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_STAROSTNESKUPINE_DESC</description>
+
+    <files>
+        <filename plugin="starostneskupine">starostneskupine.php</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_starostneskupine.ini</language>
+        <language tag="en-GB">en-GB.plg_system_starostneskupine.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+            	<field type="spacer" 
+					name="spacer_otroci" 
+					class="text" 
+					label="&lt;hr/&gt;Otroci" 
+					/>
+                <field name="otroci_nonk2_item_ids" 
+					type="text" 
+					class="input-xxlarge" 
+					default="" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_NONK2_IDS_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_NONK2_IDS_DESC" 
+					/>
+                <field name="otroci_k2_category" 
+					type="text" 
+					default="74" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_DESC" 
+					filter="integer"
+					/>
+                <field name="otroci_body_class" 
+					type="text" 
+					default="otroci" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_DESC" 
+					/>
+					
+				<field type="spacer" 
+					name="spacer_mladi" 
+					class="text" 
+					label="&lt;hr/&gt;Mladi" 
+					/>
+                <field name="mladi_nonk2_item_ids" 
+					type="text" 
+					class="input-xxlarge" 
+					default="" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_NONK2_IDS_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_NONK2_IDS_DESC" 
+					/>
+                <field name="mladi_k2_category" 
+					type="text" 
+					default="81" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_DESC" 
+					filter="integer"
+					/>
+                <field name="mladi_body_class" 
+					type="text" 
+					default="mladi" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_DESC" 
+					/>
+				<field type="spacer" 
+					name="spacer_odrasli" 
+					class="text" 
+					label="&lt;hr/&gt;Odrasli" 
+					/>
+                <field name="odrasli_k2_category" 
+					type="text" 
+					default="83" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_DESC" 
+					filter="integer"
+					/>
+                <field name="odrasli_body_class" 
+					type="text" 
+					default="odrasli" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_DESC" 
+					/>
+				<field type="spacer" 
+					name="spacer_starejsi" 
+					class="text" 
+					label="&lt;hr/&gt;Starejši" 
+					/>
+                <field name="starejsi_k2_category" 
+					type="text" 
+					default="86" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_K2_CATEGORY_ID_DESC" 
+					filter="integer"
+					/>
+                <field name="starejsi_body_class" 
+					type="text" 
+					default="starejsi" 
+					label="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_LABEL" 
+					description="PLG_SYSTEM_STAROSTNESKUPINE_BODY_CLASS_DESC" 
+					/>
+            </fieldset>
+
+        </fields>
+    </config>
+    
+</extension>
